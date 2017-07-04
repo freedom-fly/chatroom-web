@@ -13,7 +13,7 @@
                 <input type="button" v-on:click="login" value="登录" class="submit">
             </div>
             <div class="version">
-                <p>版本信息 <span>3.0.0.0</span></p>
+                <p>版本信息 <span>{{version}}</span></p>
             </div>
         </div>
     </div>
@@ -23,7 +23,8 @@ export default {
     data() {
         return {
             userName: '5003',
-            password: '123456'
+            password: '123456',
+            version:''
         }
     },
     methods: {
